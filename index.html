@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+   
+    <title>CSS</title>
+<style>
+
+a[title~="google"]
+{color: green;}
+a[title~="link"]
+{color:red}
+#first-div > p::after { 
+    content: "- NEW";
+  color: yellow;
+}
+
+[class|="top"]{color: red;}
+[class|="container" ]{
+    color: blue;
+}
+body>p:last-child:hover{
+    font-style: italic;
+}
+</style>
+
+
+</head>
+<body>
+<p> Paragraph 1</p>
+
+<a href="http://www.google.com" target="_blank" title="google"> Google</a>
+<a href="https://www.google.com/doodles" title="google doodles">Google Doodles</a> 
+<a href="http://www.link-group.eu" title="link">Goto Link Group</a>
+
+<div id="first-div" class="countent" >
+    <h1>Subheading</h1>
+<p>Paragraph 2</p>
+
+<p>Paragraph 3</p>
+</div>
+<div id="second-div">
+<h2>Sub subheading</h2>
+<p class="top">Paragraph 4</p>
+
+<p class="container">Paragraph 5</p>
+
+<p class="top-text">Paragraph 6</p>
+</div>
+<p>Paragraph 7</p>
+
+<p>Paragraph 8</p>
+
+<p>Paragraph 9</p>
+
+<p>Paragraph 10  </p> 
+</body>
+</html>
